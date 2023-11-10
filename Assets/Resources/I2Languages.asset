@@ -17,6 +17,54 @@ MonoBehaviour:
     UserAgreesToHaveItInsideThePluginsFolder: 0
     GoogleLiveSyncIsUptoDate: 1
     mTerms:
+    - Term: Resources/@Audio_Hello
+      TermType: 3
+      Description: 
+      Languages:
+      - Audio/audio_hello_en
+      - Audio/audio_hello_ko
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Resources/@Font_Small
+      TermType: 9
+      Description: 
+      Languages:
+      - Fonts & Materials/LiberationSans SDF
+      - Font/NotoSansKR-Medium SDF
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Resources/@Sprite_Hello
+      TermType: 5
+      Description: 
+      Languages:
+      - Sprite/sprite_hello_en[sprite_hello_en]
+      - Sprite/sprite_hello_ko[sprite_hello_ko]
+      Flags: 0000
+      Languages_Touch: []
+    - Term: AppName
+      TermType: 0
+      Description: 
+      Languages:
+      - Pygmalion
+      - "\uD53C\uADF8\uB9D0\uB9AC\uC628"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Applied Effects to Character
+      TermType: 3
+      Description: 
+      Languages:
+      - Applied Effects to Character
+      - "\uCE90\uB9AD\uD130\uC5D0\uAC8C \uC801\uC6A9\uB41C \uD6A8\uACFC"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Applied Effects to Party
+      TermType: 0
+      Description: 
+      Languages:
+      - Applied Effects to Party
+      - "\uD30C\uD2F0\uC5D0\uAC8C \uC801\uC6A9\uB41C \uD6A8\uACFC"
+      Flags: 0000
+      Languages_Touch: []
     - Term: Back
       TermType: 0
       Description: 
@@ -41,14 +89,6 @@ MonoBehaviour:
       - "\uB358\uC804"
       Flags: 0000
       Languages_Touch: []
-    - Term: Main Menu
-      TermType: 0
-      Description: 
-      Languages:
-      - Main Menu
-      - "\uBA54\uC778 \uBA54\uB274"
-      Flags: 0000
-      Languages_Touch: []
     - Term: End Turn
       TermType: 0
       Description: 
@@ -57,20 +97,12 @@ MonoBehaviour:
       - "\uD134 \uC885\uB8CC"
       Flags: 0000
       Languages_Touch: []
-    - Term: Applied Effects to Party
+    - Term: Main Menu
       TermType: 0
       Description: 
       Languages:
-      - Applied Effects to Party
-      - "\uD30C\uD2F0\uC5D0\uAC8C \uC801\uC6A9\uB41C \uD6A8\uACFC"
-      Flags: 0000
-      Languages_Touch: []
-    - Term: Applied Effects to Character
-      TermType: 0
-      Description: 
-      Languages:
-      - Applied Effects to Character
-      - "\uCE90\uB9AD\uD130\uC5D0\uAC8C \uC801\uC6A9\uB41C \uD6A8\uACFC"
+      - Main Menu
+      - "\uBA54\uC778 \uBA54\uB274"
       Flags: 0000
       Languages_Touch: []
     - Term: Support Effects
@@ -89,17 +121,9 @@ MonoBehaviour:
       - "\uC9C0\uD615 \uD6A8\uACFC"
       Flags: 0000
       Languages_Touch: []
-    - Term: New Text
-      TermType: 0
-      Description: 
-      Languages:
-      - 
-      - 
-      Flags: 0000
-      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
-    mTerm_AppName: 
+    mTerm_AppName: AppName
     mLanguages:
     - Name: English
       Code: en
@@ -110,16 +134,16 @@ MonoBehaviour:
     IgnoreDeviceLanguage: 0
     _AllowUnloadingLanguages: 0
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbyQ__QMKMLOgjfgrvPkQshth-eiQY7ff_Oj3tQF5Z_JkS74m6nteIhxjAKjRjPWHfIJ/exec
-    Google_SpreadsheetKey: 1xNi3KH8N2i5B-2mVv_mHQoVyTO0wk_S2lY0lskwKcNw
-    Google_SpreadsheetName: I2Loc SanyoniUnityLab Localization
-    Google_LastUpdatedVersion: 1699524966286
+    Google_SpreadsheetKey: 1QXzcUbpn7DcP33eZOWTcxv4Oeim3HHIkqVF6Jm__lEo
+    Google_SpreadsheetName: I2Loc SanyoniUnityLab AnotherTable
+    Google_LastUpdatedVersion: 1699618196464
     Google_Password: 
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2
     GoogleUpdateSynchronization: 1
     GoogleUpdateDelay: 0
     Assets: []
-    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalFileName: Localization.csv
     Spreadsheet_LocalCSVSeparator: ','
     Spreadsheet_LocalCSVEncoding: utf-8
     Spreadsheet_SpecializationAsRows: 1
