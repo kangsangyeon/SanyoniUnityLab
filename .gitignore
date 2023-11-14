@@ -5,12 +5,25 @@
 [Bb]uild/
 [Bb]uilds/
 [Uu]serSettings/
+[Pp]rofileAnalyzer/
 
 # Assets폴더 내 특정 폴더 내 파일들을 제외한 모든 파일들을 제외합니다.
 Assets/*
 !Assets/@MyProject
 !Assets/Resources
 !Assets/Editor Default Resources
+
+# Ignore unnecessary addressable build artifacts
+!Assets/AddressableAssetsData
+Assets/AddressableAssetsData/*
+!Assets/AddressableAssetsData/AssetGroups/
+!Assets/AddressableAssetsData/AssetGroups.meta
+!Assets/AddressableAssetsData/AssetGroupTemplates/
+!Assets/AddressableAssetsData/AssetGroupTemplates.meta
+!Assets/AddressableAssetsData/DataBuilders/
+!Assets/AddressableAssetsData/DataBuilders.meta
+!Assets/AddressableAssetsData/*.asset
+!Assets/AddressableAssetsData/*.asset.meta
 
 # Visual Studio cache directory
 .vs/

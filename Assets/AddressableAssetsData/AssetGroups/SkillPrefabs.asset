@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SkillPrefabs
+  m_EditorClassIdentifier: 
+  m_GroupName: SkillPrefabs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9cf0283afc53c794e8f6e74e12a57cb1
+  m_SerializeEntries:
+  - m_GUID: bd137c92f463eee45b90cc0f035eae06
+    m_Address: Assets/Magic/Ice_Lv2_2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skills_Magic_Lv2
+    - Scene_Tutorial
+  - m_GUID: 9b344cf76f6dfec41b58d19a012667b3
+    m_Address: Assets/Magic/Ice_Lv3_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skills_Magic_Lv3
+  - m_GUID: 73eb610f1abba884dbc1ec4aaf25a997
+    m_Address: Assets/Magic/Ice_Lv3_2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skills_Magic_Lv3
+  - m_GUID: 6e1211a2cfaf938449407987a1e9b83f
+    m_Address: Assets/Magic/Ice_Lv2_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skills_Magic_Lv2
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 80b6ea900ca55474db93b8bb6d91ee0a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 87a30a04138d265458528daae6ea5846, type: 2}
+    - {fileID: 11400000, guid: 6a20c4f04fe43274ea4522d24b269e33, type: 2}
