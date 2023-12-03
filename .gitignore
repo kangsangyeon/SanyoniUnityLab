@@ -10,6 +10,7 @@
 Assets/*
 !Assets/@MyProject
 !Assets/Resources
+!Assets/StreamingAssets
 !Assets/Editor Default Resources
 
 # Visual Studio cache directory

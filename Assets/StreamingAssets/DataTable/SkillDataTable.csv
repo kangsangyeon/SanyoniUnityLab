@@ -1,0 +1,6 @@
+Id,Type,Grade,Name,Range,Duration,ShakeStrength,ShakeDuration,Cost
+0,1,R,베기,1,4,0.2,0.2,5
+1,1,R,회전베기,1,5,0.2,0.2,4
+2,1,SR,삼단베기,1,5,0.2,0.2,3
+3,0,R,아이스 볼트,1,180,0.2,0.2,4
+4,1,R,파이어볼,1,30,0.2,0.2,2
