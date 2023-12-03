@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "Name": "Warrior",
+    "Hp": 120,
+    "Attack": 80,
+    "Defense": 60,
+    "Speed": 50,
+    "Critical": 30,
+    "CriticalDamage": 150,
+    "Accuracy": 90,
+    "Evasion": 10,
+    "Block": 20,
+    "Counter": 15
+  },
+  {
+    "Id": 2,
+    "Name": "Mage",
+    "Hp": 80,
+    "Attack": 100,
+    "Defense": 40,
+    "Speed": 60,
+    "Critical": 40,
+    "CriticalDamage": 200,
+    "Accuracy": 85,
+    "Evasion": 15,
+    "Block": 10,
+    "Counter": 10
+  },
+  {
+    "Id": 3,
+    "Name": "Archer",
+    "Hp": 100,
+    "Attack": 70,
+    "Defense": 50,
+    "Speed": 70,
+    "Critical": 50,
+    "CriticalDamage": 175,
+    "Accuracy": 95,
+    "Evasion": 20,
+    "Block": 15,
+    "Counter": 20
+  }
+]
