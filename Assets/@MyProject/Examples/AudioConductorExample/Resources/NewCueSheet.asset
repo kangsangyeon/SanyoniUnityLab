@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2a166b4c2c548b991995a3cb1b2885, type: 3}
+  m_Name: NewCueSheet
+  m_EditorClassIdentifier: 
+  cueSheet:
+    id: 18c47f2d-5e16-485a-bd7d-80c559d6c1fd
+    name: Example
+    throttleType: 0
+    throttleLimit: 0
+    volume: 1
+    pitch: 1
+    pitchInvert: 0
+    cueList:
+    - id: db4dd383-dc2a-4aa7-a65d-4a3ea9c87b72
+      colorId: 519473c6-3943-47f2-b3a4-b2c6e37444fa
+      name: voice_hello
+      categoryId: 1631814776
+      throttleType: 0
+      throttleLimit: 0
+      volume: 1
+      volumeRange: 0.1
+      pitch: 1
+      pitchRange: 0.05
+      pitchInvert: 0
+      playType: 1
+      trackList:
+      - id: 047b47b7-1c54-45dc-9f94-7fc0864d9b66
+        colorId: 
+        name: en
+        audioClip: {fileID: 8300000, guid: 61cf354f1fb848847bd638e0f5f1cb91, type: 3}
+        volume: 1
+        volumeRange: 0
+        pitch: 1
+        pitchRange: 0
+        pitchInvert: 0
+        startSample: 10076
+        endSample: 29678
+        loopStartSample: 0
+        isLoop: 0
+        randomWeight: 0
+        priority: 0
+        fadeTime: 0
+      - id: 26e181e8-c840-4458-946a-e4deb2110bb7
+        colorId: 
+        name: ko
+        audioClip: {fileID: 8300000, guid: c2a6d9025842e9a4785b8a69d295efd9, type: 3}
+        volume: 1
+        volumeRange: 0
+        pitch: 1
+        pitchRange: 0
+        pitchInvert: 0
+        startSample: 10246
+        endSample: 47275
+        loopStartSample: 0
+        isLoop: 0
+        randomWeight: 0
+        priority: 0
+        fadeTime: 0
+    - id: 3b03bb4b-9ffc-42e8-aaab-4547db2c82ab
+      colorId: 519473c6-3943-47f2-b3a4-b2c6e37444fa
+      name: bgm_battle
+      categoryId: 555113634
+      throttleType: 0
+      throttleLimit: 0
+      volume: 1
+      volumeRange: 0
+      pitch: 1
+      pitchRange: 0
+      pitchInvert: 0
+      playType: 0
+      trackList:
+      - id: f576c0ae-03a0-4594-a873-c1cbfc2eb131
+        colorId: 
+        name: "\u60C5\u52D5\u30AB\u30BF\u30EB\u30B7\u30B9"
+        audioClip: {fileID: 8300000, guid: fda0c6199433d4c4ab2a291d3221ac2a, type: 3}
+        volume: 1
+        volumeRange: 0
+        pitch: 1
+        pitchRange: 0
+        pitchInvert: 0
+        startSample: 0
+        endSample: 5721048
+        loopStartSample: 286032
+        isLoop: 1
+        randomWeight: 0
+        priority: 0
+        fadeTime: 0
+    - id: 905f69cf-43c8-4e0d-ba41-9203f2f79cfc
+      colorId: 519473c6-3943-47f2-b3a4-b2c6e37444fa
+      name: sfx_damage_blood
+      categoryId: 307353103
+      throttleType: 0
+      throttleLimit: 0
+      volume: 1
+      volumeRange: 0.1
+      pitch: 1
+      pitchRange: 0.1
+      pitchInvert: 0
+      playType: 1
+      trackList:
+      - id: 71ce6267-aff0-42a3-8fa1-1704af36a78e
+        colorId: 
+        name: ESM_Ancient_Game_Weapon_Swing_Blood_Hit_4_Kill_Murder_Fantasy_Weapon_Wet
+        audioClip: {fileID: 8300000, guid: 45ac85ab178149741a7898ea5334dca7, type: 3}
+        volume: 1
+        volumeRange: 0
+        pitch: 1
+        pitchRange: 0
+        pitchInvert: 0
+        startSample: 4043
+        endSample: 26886
+        loopStartSample: 0
+        isLoop: 0
+        randomWeight: 0
+        priority: 0
+        fadeTime: 0
+      - id: 6d51360a-6c39-4947-bb44-b722f7de6d07
+        colorId: 
+        name: ESM_Ancient_Game_Weapon_Swing_Blood_Hit_10_Kill_Murder_Fantasy_Weapon_Wet
+        audioClip: {fileID: 8300000, guid: 639de6a2fef0d8147aa9054eed99dcf8, type: 3}
+        volume: 1
+        volumeRange: 0
+        pitch: 1
+        pitchRange: 0
+        pitchInvert: 0
+        startSample: 3881
+        endSample: 30533
+        loopStartSample: 0
+        isLoop: 0
+        randomWeight: 0
+        priority: 0
+        fadeTime: 0

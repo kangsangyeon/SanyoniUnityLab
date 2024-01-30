@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb255b17fe5e47269cdbd8be0692356, type: 3}
+  m_Name: AudioConductorSettings
+  m_EditorClassIdentifier: 
+  throttleType: 0
+  throttleLimit: 0
+  categoryList:
+  - id: 555113634
+    name: bgm
+    throttleType: 0
+    throttleLimit: 0
+    audioMixerGroup: {fileID: 832376549269933267, guid: ded74dc8333842c4094b942bdbd93781, type: 2}
+  - id: 55981335
+    name: ui
+    throttleType: 0
+    throttleLimit: 0
+    audioMixerGroup: {fileID: 7825280572777448307, guid: ded74dc8333842c4094b942bdbd93781, type: 2}
+  - id: 307353103
+    name: sfx
+    throttleType: 0
+    throttleLimit: 0
+    audioMixerGroup: {fileID: 418893667852821424, guid: ded74dc8333842c4094b942bdbd93781, type: 2}
+  - id: 1631814776
+    name: voice
+    throttleType: 0
+    throttleLimit: 0
+    audioMixerGroup: {fileID: 6361058583691904606, guid: ded74dc8333842c4094b942bdbd93781, type: 2}

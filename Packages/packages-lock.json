@@ -158,6 +158,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "jp.co.cyberagent.audioconductor": {
+      "version": "https://github.com/CyberAgentGameEntertainment/AudioConductor.git?path=/Packages/AudioConductor",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c98df23b092990aa591e526c6e3b21376c2a28ed"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
