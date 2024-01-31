@@ -49,6 +49,17 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# Unity3D generated Profiler temp
+ProfileAnalyzer
+
 # Asset Hunter Pro
 Packages/com.heurekagames.assethunterpro
 Packages/com.heurekagames.utils
+
+# NuGet package manager로 설치한 패키지 목록을 추적합니다.
+Assets/Packages/**/*
+!Assets/Packages.meta
+!Assets/NuGet.config
+!Assets/NuGet.config.meta
+!Assets/packages.config
+!Assets/packages.config.meta

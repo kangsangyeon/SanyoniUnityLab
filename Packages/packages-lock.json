@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "441f6df275ff7bb54169554231ff0f8211148b1e"
+      "hash": "7388d28922b2144497f639630fd8b8b7a3c1ee6d"
     },
     "com.svermeulen.extenject": {
       "version": "https://github.com/Mathijs-Bakker/Extenject.git?path=UnityProject/Assets/Plugins/Zenject/Source",
