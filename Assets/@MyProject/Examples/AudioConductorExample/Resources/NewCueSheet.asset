@@ -104,7 +104,7 @@ MonoBehaviour:
       volume: 1
       volumeRange: 0.1
       pitch: 1
-      pitchRange: 0.1
+      pitchRange: 0.15
       pitchInvert: 0
       playType: 1
       trackList:
@@ -117,8 +117,8 @@ MonoBehaviour:
         pitch: 1
         pitchRange: 0
         pitchInvert: 0
-        startSample: 4043
-        endSample: 26886
+        startSample: 9657
+        endSample: 25630
         loopStartSample: 0
         isLoop: 0
         randomWeight: 0
@@ -133,10 +133,39 @@ MonoBehaviour:
         pitch: 1
         pitchRange: 0
         pitchInvert: 0
-        startSample: 3881
-        endSample: 30533
+        startSample: 2852
+        endSample: 28766
         loopStartSample: 0
         isLoop: 0
+        randomWeight: 0
+        priority: 0
+        fadeTime: 0
+    - id: cc1ee142-0771-4479-94a6-60cafeb0525e
+      colorId: 
+      name: bgm_sample
+      categoryId: 0
+      throttleType: 0
+      throttleLimit: 0
+      volume: 1
+      volumeRange: 0
+      pitch: 1
+      pitchRange: 0
+      pitchInvert: 0
+      playType: 0
+      trackList:
+      - id: a66b6aae-b814-4cb5-a61d-e4d4299ac198
+        colorId: 
+        name: SampleMusic
+        audioClip: {fileID: 8300000, guid: 0306128c9ef2b0e47b498d727aa3a932, type: 3}
+        volume: 1
+        volumeRange: 0
+        pitch: 1
+        pitchRange: 0
+        pitchInvert: 0
+        startSample: 0
+        endSample: 1263760
+        loopStartSample: 631880
+        isLoop: 1
         randomWeight: 0
         priority: 0
         fadeTime: 0
