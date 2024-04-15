@@ -734,7 +734,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: TextMeshPro
+    Android: TextMeshPro;STEAMAUDIO_ENABLED
     CloudRendering: TextMeshPro
     EmbeddedLinux: TextMeshPro
     GameCoreXboxOne: TextMeshPro
@@ -745,12 +745,12 @@ PlayerSettings:
     QNX: TextMeshPro
     Server: NET_STANDARD_2_0
     Stadia: TextMeshPro
-    Standalone: TextMeshPro
+    Standalone: TextMeshPro;STEAMAUDIO_ENABLED
     VisionOS: TextMeshPro
     WebGL: TextMeshPro
     Windows Store Apps: TextMeshPro
     XboxOne: TextMeshPro
-    iPhone: TextMeshPro
+    iPhone: TextMeshPro;STEAMAUDIO_ENABLED
     tvOS: TextMeshPro
   additionalCompilerArguments: {}
   platformArchitecture: {}
