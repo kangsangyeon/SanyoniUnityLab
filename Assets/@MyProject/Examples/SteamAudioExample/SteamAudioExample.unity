@@ -552,7 +552,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 67573c06e95544a4fad0316380349bc9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -596,13 +596,22 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.38719636
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -735,7 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directBinaural: 1
-  interpolation: 0
+  interpolation: 1
   perspectiveCorrection: 0
   distanceAttenuation: 1
   distanceAttenuationInput: 1
@@ -747,8 +756,8 @@ MonoBehaviour:
   airAbsorptionHigh: 1
   directivity: 1
   directivityInput: 0
-  dipoleWeight: 0.487
-  dipolePower: 1.88
+  dipoleWeight: 0.481
+  dipolePower: 1.86
   directivityValue: 1
   occlusion: 1
   occlusionInput: 0
@@ -776,7 +785,7 @@ MonoBehaviour:
   hybridReverbEQHigh: 1
   hybridReverbDelay: 0
   applyHRTFToReflections: 1
-  reflectionsMixLevel: 1
+  reflectionsMixLevel: 0.5
   pathing: 0
   pathingProbeBatch: {fileID: 0}
   pathValidation: 1
