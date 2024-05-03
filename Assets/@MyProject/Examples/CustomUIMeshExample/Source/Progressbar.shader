@@ -112,8 +112,8 @@ Shader "UI/ProgressBar"
                     colorMap.a *= UnityGet2DClipping(IN.worldPosition.xy, _ClipRect);
                 #endif
                 // comment out the sin version and just us the _FillSlider for manual control
-                //float fillAmount = _FillSlider;
-                float fillAmount = sin(_Time.y * _FillSlider);
+                float fillAmount = _FillSlider;
+                // float fillAmount = sin(_Time.y * _FillSlider);
                 // base bar
                 float cutoffpoint =step( IN.texcoord.y , fillAmount- _Edge);
                 colorMap *= cutoffpoint;

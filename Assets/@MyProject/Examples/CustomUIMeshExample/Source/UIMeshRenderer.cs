@@ -1,4 +1,5 @@
 //Custom UI Meshes script by @MinionsArt
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,31 +9,22 @@ using UnityEngine.UI;
 [ExecuteAlways]
 public class UIMeshRenderer : MonoBehaviour
 {
-
-    [SerializeField]
-    Material Material;
-    [SerializeField]
-    private Mesh mesh;
-    [SerializeField]
-    bool mask;
-
-    [SerializeField]
-    bool showMaskGraphic;
-
-    [SerializeField]
-    bool maskable;
-
-    [SerializeField]
-    bool preserveAspect;
+    [SerializeField] Material Material;
+    [SerializeField] private Mesh mesh;
+    [SerializeField] bool mask;
+    [SerializeField] bool showMaskGraphic;
+    [SerializeField] bool maskable;
+    [SerializeField] bool preserveAspect;
 
     CanvasRenderer canvasRenderer;
-
+    RectTransform rect;
     Image[] childImage;
-
     Vector3[] baseVertices;
 
-    RectTransform rect;
-    float cachedHeight, cachedWidth;
+    private float cachedWidth;
+    private float cachedHeight;
+    private Vector2 cachedPivot;
+
     void Start()
     {
         SetupMesh();
@@ -40,15 +32,12 @@ public class UIMeshRenderer : MonoBehaviour
 
     void SetupMesh()
     {
-        // grab the canvasrenderer
         if (canvasRenderer == null)
-        {
             canvasRenderer = GetComponent<CanvasRenderer>();
-        }
+
         if (rect == null)
-        {
-            rect = GetComponent<RectTransform>();
-        }
+            rect = (RectTransform)transform;
+
         // set the mesh and material
         canvasRenderer.SetMaterial(Material, null);
         // create new mesh with scale
@@ -74,11 +63,15 @@ public class UIMeshRenderer : MonoBehaviour
     void Update()
     {
         // if rect changed, update
-        if (cachedWidth != rect.rect.width || cachedHeight != rect.rect.height)
+        if (cachedWidth != rect.rect.width
+            | cachedHeight != rect.rect.height
+            || cachedPivot != rect.pivot)
         {
             canvasRenderer.SetMesh(CreateNewMesh());
+            SetupMesh();
             cachedWidth = rect.rect.width;
             cachedHeight = rect.rect.height;
+            cachedPivot = rect.pivot;
         }
     }
 
@@ -111,15 +104,11 @@ public class UIMeshRenderer : MonoBehaviour
 
             if (meshRatio > rectRatio)
             {
-                var oldHeight = r.height;
                 r.height = r.width * (1.0f / meshRatio);
-                r.y += (oldHeight - r.height) * rect.pivot.y;
             }
             else
             {
-                var oldWidth = r.width;
                 r.width = r.height * meshRatio;
-                r.x += (oldWidth - r.width) * rect.pivot.x;
             }
         }
 
@@ -132,13 +121,16 @@ public class UIMeshRenderer : MonoBehaviour
         {
             var vertex = baseVertices[i];
             vertex.x = vertex.x * scaleX;
-
             vertex.y = vertex.y * scaleY;
-
             vertex.z = vertex.z * scaleX;
+
+            // calculate and add vertex offset to draw mesh at center of rect
+            vertex.x += rect.sizeDelta.x * (rect.pivot.x - 0.5f) * -1;
+            vertex.y += rect.sizeDelta.y * (rect.pivot.y - 0.5f) * -1;
 
             vertices[i] = vertex;
         }
+
         // set new vertices
         newMesh.vertices = vertices;
 
@@ -199,16 +191,14 @@ public class UIMeshRenderer : MonoBehaviour
                 images[i].material.SetInt("_StencilReadMask", 1);
                 images[i].material.SetInt("_StencilWriteMask", 0);
             }
-
         }
     }
+
     void OnValidate()
     {
         if (!Application.isPlaying)
         {
             SetupMesh();
         }
-
     }
-
 }
