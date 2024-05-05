@@ -36,10 +36,11 @@ using UnityEngine.UI;
 
 
 [ExecuteInEditMode]
-public class CanvasMesh : Graphic
+public class CanvasMesh : MaskableGraphic
 {
     // Inspector properties
     public Mesh Mesh = null;
+    public bool PreserveAspect;
 
 
     /// <summary>
@@ -50,23 +51,39 @@ public class CanvasMesh : Graphic
     {
         vh.Clear();
         if (Mesh == null) return;
+
         // Get data from mesh
         Vector3[] verts = Mesh.vertices;
         Vector2[] uvs = Mesh.uv;
         if (uvs.Length < verts.Length)
             uvs = new Vector2[verts.Length];
+
         // Get mesh bounds parameters
         Vector2 meshMin = Mesh.bounds.min;
         Vector2 meshSize = Mesh.bounds.size;
+
+        // adjust rect size if preserve aspect enabled
+        Rect rect = rectTransform.rect;
+        if (PreserveAspect && meshSize.sqrMagnitude > 0.0f)
+        {
+            var meshRatio = meshSize.x / meshSize.y;
+            var rectRatio = rect.width / rect.height;
+            if (meshRatio > rectRatio)
+                rect.height = rect.width * (1.0f / meshRatio);
+            else
+                rect.width = rect.height * meshRatio;
+        }
+
         // Add scaled vertices
         for (int ii = 0; ii < verts.Length; ii++)
         {
             Vector2 v = verts[ii];
             v.x = (v.x - meshMin.x) / meshSize.x;
             v.y = (v.y - meshMin.y) / meshSize.y;
-            v = Vector2.Scale(v - rectTransform.pivot, rectTransform.rect.size);
+            v = Vector2.Scale(v - rectTransform.pivot, rect.size);
             vh.AddVert(v, color, uvs[ii]);
         }
+
         // Add triangles
         int[] tris = Mesh.triangles;
         for (int ii = 0; ii < tris.Length; ii += 3)
