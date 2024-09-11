@@ -42,6 +42,27 @@ public class CanvasMesh : MaskableGraphic
     public Mesh Mesh = null;
     public bool PreserveAspect;
 
+// #if UNITY_EDITOR
+//     [NaughtyAttributes.Button]
+//     private void ForceSetAllDirty()
+//     {
+//         SetAllDirty();
+//     }
+//
+//     [NaughtyAttributes.Button]
+//     private void ForceSetMaterialDirty()
+//     {
+//         m_ShouldRecalculateStencil = true;
+//         SetMaterialDirty();
+//     }
+//
+//     [NaughtyAttributes.Button]
+//     private void ForceSetVerticesDirty()
+//     {
+//         SetVerticesDirty();
+//     }
+// #endif
+
 
     /// <summary>
     /// Callback function when a UI element needs to generate vertices.
@@ -64,15 +85,7 @@ public class CanvasMesh : MaskableGraphic
 
         // adjust rect size if preserve aspect enabled
         Rect rect = rectTransform.rect;
-        if (PreserveAspect && meshSize.sqrMagnitude > 0.0f)
-        {
-            var meshRatio = meshSize.x / meshSize.y;
-            var rectRatio = rect.width / rect.height;
-            if (meshRatio > rectRatio)
-                rect.height = rect.width * (1.0f / meshRatio);
-            else
-                rect.width = rect.height * meshRatio;
-        }
+        PreserveMeshAspectRatio(ref rect, meshSize);
 
         // Add scaled vertices
         for (int ii = 0; ii < verts.Length; ii++)
@@ -88,6 +101,13 @@ public class CanvasMesh : MaskableGraphic
         int[] tris = Mesh.triangles;
         for (int ii = 0; ii < tris.Length; ii += 3)
             vh.AddTriangle(tris[ii], tris[ii + 1], tris[ii + 2]);
+    }
+
+    protected override void OnDidApplyAnimationProperties()
+    {
+        SetMaterialDirty();
+        SetVerticesDirty();
+        SetRaycastDirty();
     }
 
     /// <summary>
@@ -123,5 +143,25 @@ public class CanvasMesh : MaskableGraphic
         v.x += Mesh.bounds.min.x;
         v.y += Mesh.bounds.min.y;
         return v;
+    }
+
+    // source code from UnityEngine.UI.Image
+    private void PreserveMeshAspectRatio(ref Rect rect, Vector2 meshSize)
+    {
+        var meshRatio = meshSize.x / meshSize.y;
+        var rectRatio = rect.width / rect.height;
+
+        if (meshRatio > rectRatio)
+        {
+            var oldHeight = rect.height;
+            rect.height = rect.width * (1.0f / meshRatio);
+            rect.y += (oldHeight - rect.height) * rectTransform.pivot.y;
+        }
+        else
+        {
+            var oldWidth = rect.width;
+            rect.width = rect.height * meshRatio;
+            rect.x += (oldWidth - rect.width) * rectTransform.pivot.x;
+        }
     }
 }
