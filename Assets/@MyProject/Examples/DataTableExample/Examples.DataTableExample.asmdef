@@ -1,0 +1,18 @@
+{
+    "name": "Examples.DataTableExample",
+    "rootNamespace": "",
+    "references": [
+        "GUID:79491ff6f49a94d4d8de08f9ec84f4dc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "CsvHelper.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
