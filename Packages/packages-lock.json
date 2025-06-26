@@ -14,6 +14,13 @@
       "dependencies": {},
       "hash": "b93741e2b5fe9073e169853ade0039c7cf2595f0"
     },
+    "com.mackysoft.navigathena": {
+      "version": "1.1.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.neuecc.unirx": {
       "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
       "depth": 0,
