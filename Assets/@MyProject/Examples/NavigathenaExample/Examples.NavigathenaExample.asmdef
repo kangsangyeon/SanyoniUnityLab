@@ -1,0 +1,19 @@
+{
+    "name": "Examples.NavigathenaExample",
+    "rootNamespace": "",
+    "references": [
+        "MackySoft.Navigathena",
+        "MackySoft.Navigathena.SceneManagement",
+        "UniTask",
+        "UniTask.Linq"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
