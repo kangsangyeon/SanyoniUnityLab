@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ca7d9a101af804e40b4a0366ee81f248
+guid: 17931e0224ae80840a66f83be439e069
 AssemblyDefinitionImporter:
   externalObjects: {}
   userData: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 229857
   packageName: Sonity - Audio Middleware
   packageVersion: 1.1.0
-  assetPath: Assets/Plugins/Sonity/Scripts/Internal/Editor/Asmdef_Sonity.Internal.Editor.asmdef
+  assetPath: Assets/Plugins/Sonity/Scripts/Public/Editor/Asmdef_Sonity.Public.Editor.asmdef
   uploadId: 767858

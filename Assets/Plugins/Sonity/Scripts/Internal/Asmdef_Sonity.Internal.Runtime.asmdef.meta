@@ -5,3 +5,10 @@ AssemblyDefinitionImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 229857
+  packageName: Sonity - Audio Middleware
+  packageVersion: 1.1.0
+  assetPath: Assets/Plugins/Sonity/Scripts/Internal/Asmdef_Sonity.Internal.Runtime.asmdef
+  uploadId: 767858

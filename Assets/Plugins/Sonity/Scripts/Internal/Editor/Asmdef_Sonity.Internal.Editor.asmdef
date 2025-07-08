@@ -2,7 +2,9 @@
     "name": "Sonity.Editor",
     "rootNamespace": "",
     "references": [
-        "Sonity.Runtime"
+        "Sonity.Runtime",
+        "Unity.Addressables",
+        "SteamAudioUnity"
     ],
     "includePlatforms": [
         "Editor"

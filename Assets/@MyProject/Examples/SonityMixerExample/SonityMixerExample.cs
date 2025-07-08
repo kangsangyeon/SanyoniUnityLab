@@ -24,7 +24,7 @@ public class SonityMixerExample : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             var _se = Resources.Load<SoundEvent>("Bgm/good_SE");
-            _se.PlayMusic();
+            _se.MusicPlay();
         }
 
         if (Input.GetKeyDown(KeyCode.W))
