@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.cysharp.mastermemory": {
+      "version": "2.4.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.cysharp.unitask": {
       "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
       "depth": 0,
@@ -13,6 +20,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "b93741e2b5fe9073e169853ade0039c7cf2595f0"
+    },
+    "com.github.messagepack-csharp": {
+      "version": "3.1.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
     },
     "com.mackysoft.navigathena": {
       "version": "1.1.0",
