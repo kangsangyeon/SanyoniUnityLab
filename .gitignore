@@ -210,8 +210,10 @@ Assets/Plugins/*
 !Assets/Plugins/ParrelSync/**/*
 
 # Assets/AssetStore 폴더 하위에 있는 애셋들의 루트 폴더 meta를 포함합니다.
-!Assets/AssetStore.meta
-!Assets/AssetStore/*.meta
+/[Aa]ssets/[Aa]sset[Ss]tore/**/*
+!/[Aa]ssets/[Aa]sset[Ss]tore/
+!/[Aa]ssets/[Aa]sset[Ss]tore.meta
+!/[Aa]ssets/[Aa]sset[Ss]tore/*.meta
 
 # Temporary auto-generated Android Assets
 [Aa]ssets/[Ss]treamingAssets/aa.meta
