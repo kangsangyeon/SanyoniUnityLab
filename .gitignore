@@ -186,12 +186,15 @@ sysinfo.txt
 ~$*
 
 # NuGet package manager로 설치한 패키지 파일을 추적 대상에서 제외합니다.
-[Aa]ssets/[Pp]ackages/*
-![Aa]ssets/[Pp]ackages/**/*.dll.meta
-![Aa]ssets/NuGet.config
-![Aa]ssets/NuGet.config.meta
-![Aa]ssets/packages.config
-![Aa]ssets/packages.config.meta
+/[Aa]ssets/[Pp]ackages/**/*
+!/[Aa]ssets/[Pp]ackages/
+!/[Aa]ssets/[Pp]ackages/**/
+!/[Aa]ssets/[Pp]ackages/**/*.dll.meta
+!/[Aa]ssets/[Pp]ackages.meta
+!/[Aa]ssets/packages.config
+!/[Aa]ssets/packages.config.meta
+!/[Aa]ssets/NuGet.config
+!/[Aa]ssets/NuGet.config.meta
 
 # 직접 수정해서 사용할 애셋들은 Assets/@AssetStore 폴더로 이동시키고, git에 추가합니다.
 !Assets/@AssetStore**/*.*
