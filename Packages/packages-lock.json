@@ -360,6 +360,13 @@
       },
       "hash": "4fe77f63cf58d00f3051f918b60e6287fff68c6b"
     },
+    "dev.yarnspinner.unity": {
+      "version": "3.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "jp.co.cyberagent.audioconductor": {
       "version": "https://github.com/CyberAgentGameEntertainment/AudioConductor.git?path=/Packages/AudioConductor",
       "depth": 0,

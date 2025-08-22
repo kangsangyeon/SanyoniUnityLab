@@ -6,9 +6,9 @@ namespace MyProject.Examples.YarnSpinnerExample.YarnSpinner.Service
 {
     public class ActorService
     {
-        private Dictionary<string, ICharActor> _charActors = new();
+        private Dictionary<string, ICharActorModel> _charActors = new();
 
-        public ICharActor GetActor(string charName) => _charActors[charName];
+        public ICharActorModel GetActor(string charName) => _charActors[charName];
 
         private void CharCommand(string charName)
         {

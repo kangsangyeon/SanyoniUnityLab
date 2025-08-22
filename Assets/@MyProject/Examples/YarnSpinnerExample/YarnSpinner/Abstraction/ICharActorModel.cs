@@ -2,7 +2,7 @@
 
 namespace MyProject.Examples.YarnSpinnerExample.YarnSpinner.Abstraction
 {
-    public interface ICharActor
+    public interface ICharActorModel
     {
         string Name { get; }
         string DisplayName { get; set; }
@@ -12,7 +12,7 @@ namespace MyProject.Examples.YarnSpinnerExample.YarnSpinner.Abstraction
         int SortOrder { get; set; }
     }
 
-    public class CharActor : ICharActor
+    public class CharActorModel : ICharActorModel
     {
         public string Name { get; }
         public string DisplayName { get; set; }

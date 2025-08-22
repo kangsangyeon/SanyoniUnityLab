@@ -1,10 +1,18 @@
 ﻿using System.Threading;
+using MyProject.Examples.YarnSpinnerExample.YarnSpinner.Abstraction;
 using Yarn.Unity;
 
 namespace MyProject.Examples.YarnSpinnerExample.YarnSpinner
 {
     public class VNDialoguePresenter : DialoguePresenterBase
     {
+        private IActorService _actorService;
+
+        public VNDialoguePresenter(IActorService actorService)
+        {
+            _actorService = actorService;
+        }
+
         public override YarnTask RunLineAsync(
             LocalizedLine line,
             LineCancellationToken token)
