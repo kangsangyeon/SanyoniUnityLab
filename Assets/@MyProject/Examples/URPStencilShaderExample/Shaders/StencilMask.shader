@@ -9,7 +9,7 @@ Shader "HolographicCard/StencilMask"
         Tags 
         { 
             "RenderType" = "Opaque"
-            "Queue" = "Geometry"
+            "Queue" = "Transparent-5"
             "RenderPipeline" = "UniversalPipeline"
         }
 
