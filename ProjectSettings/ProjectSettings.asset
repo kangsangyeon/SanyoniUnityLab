@@ -771,7 +771,7 @@ PlayerSettings:
     ReservedCFE: TextMeshPro
     Server: NET_STANDARD_2_0
     Stadia: TextMeshPro;DOTWEEN
-    Standalone: TextMeshPro;STEAMAUDIO_ENABLED;DOTWEEN
+    Standalone: TextMeshPro;STEAMAUDIO_ENABLED;DOTWEEN;UNITASK_DOTWEEN_SUPPORT
     VisionOS: TextMeshPro;DOTWEEN
     WebGL: TextMeshPro;DOTWEEN
     Windows Store Apps: TextMeshPro;DOTWEEN

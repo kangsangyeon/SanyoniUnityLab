@@ -1,0 +1,21 @@
+{
+    "name": "Examples.UniTaskDOTweenCancellationTokenExample",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1a11ed997ef9d4f4ab94552a23ed8b37",
+        "GUID:f83828d152cf0a747aafdf7469b0fb8a",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:029c1c1b674aaae47a6841a0b89ad80e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "DOTween.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
